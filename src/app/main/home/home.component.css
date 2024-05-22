@@ -1,0 +1,30 @@
+.form-control {
+  margin-bottom: 30px;
+}
+
+.filter {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 1.2rem;
+  height: 530px;
+}
+
+app-user-card {
+  margin: 0 auto;
+}
+
+.fruits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 1.2rem;
+  height: 530px;
+}
+
+app-fruit {
+  margin: 0 auto;
+}

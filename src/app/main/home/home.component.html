@@ -1,0 +1,30 @@
+<div class="filter">
+  <input
+    class="form-control"
+    id="filter-user"
+    type="text"
+    placeholder="filter users"
+    [(ngModel)]="filterUsersKey"
+  />
+</div>
+<div class="users-grid">
+  @for(user of filterUsersFn | wrapFn: filterUsersKey ; track $index ) {
+  <app-user-card [user]="user"></app-user-card>
+  }
+</div>
+
+<!-- fruits -->
+<div class="filter">
+  <input
+    class="form-control"
+    id="filter-fruit"
+    type="text"
+    placeholder="filter fruits"
+    [(ngModel)]="filterFruitsKey"
+  />
+</div>
+<div class="fruits-grid">
+  @for (fruit of filterFruitsFn | wrapFn : filterFruitsKey ; track $index) {
+  <app-fruit [fruit]="fruit"></app-fruit>
+  }
+</div>
